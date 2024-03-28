@@ -11,9 +11,9 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 import re
 import pickle
 
-model=load_model('sentiment.h5')
+model=load_model('sentiment-v2.h5')
 # Load tokenizer from file
-with open('tokenizer.pickle', 'rb') as handle:
+with open('tokenizer-v2.pickle', 'rb') as handle:
     tokenizer = pickle.load(handle)
 
 
